@@ -36,7 +36,7 @@ Jira JSON → Prompt Engineering → Ollama (qwen2.5:3b)
 
 ## Installation
 
-### Install Ollama
+### Install Ollama & Dependencies
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
