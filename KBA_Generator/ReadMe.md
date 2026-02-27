@@ -40,11 +40,15 @@ Jira JSON → Prompt Engineering → Ollama (qwen2.5:3b)
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
+
 ollama serve
+
 ollama pull qwen2.5:3b
-```
 
 pip install ollama markdown 
+```
+
+
 
 
 
