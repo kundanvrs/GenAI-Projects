@@ -51,11 +51,11 @@ git clone <your-repo-url>
 cd kba-search
 ```
 2️⃣ Install Dependencies
-pip install faiss-cpu numpy beautifulsoup4 ollama
+- pip install faiss-cpu numpy beautifulsoup4 ollama
 3️⃣ Install & Pull Embedding Model (Ollama)
 
-Make sure Ollama is installed:
-ollama pull nomic-embed-text
+- Make sure Ollama is installed:
+- ollama pull nomic-embed-text
 
 🧠 How It Works
 1️⃣ Index KBA Articles
@@ -84,20 +84,20 @@ The system will:
 - faiss.IndexFlatIP(dimension)
 - faiss.normalize_L2(vector)
 
-Why?
+- Why?
 Inner Product (IP) becomes Cosine Similarity when vectors are normalized. This ensures semantic similarity based on vector direction, not magnitude.
 
 📊 Example Output
 🔍 Aggregated Article Ranking:
 
-Article: OPS-1024
-Total Combined Score: 1.72
+- Article: OPS-1024
+- Total Combined Score: 1.72
 
-Article: DB-204
-Total Combined Score: 0.83
+- Article: DB-204
+- Total Combined Score: 0.83
 
 🏆 FINAL BEST MATCH
-Article: OPS-1024
+- Article: OPS-1024
 🧩 Metadata Structure
 
 Each stored chunk has metadata:
