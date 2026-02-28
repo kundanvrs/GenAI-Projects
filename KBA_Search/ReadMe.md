@@ -59,26 +59,26 @@ ollama pull nomic-embed-text
 
 🧠 How It Works
 1️⃣ Index KBA Articles
-Reads all .html files from kba_articles/
-Extracts clean text
-Splits text into chunks
-Creates embeddings
-Normalizes vectors
-Stores vectors in FAISS
-Saves metadata mapping
+- Reads all .html files from kba_articles/
+- Extracts clean text
+- Splits text into chunks
+- Creates embeddings
+- Normalizes vectors
+- Stores vectors in FAISS
+- Saves metadata mapping
 
 2️⃣ Search for Similar KBA
 Provide a new ticket description:
 search_similar_kba("Root filesystem full causing SSH failure")
 
 The system will:
-Generate embedding for the ticket
-Normalize vector
-Search top 5 chunks
-Group chunks by article
-Sum similarity scores
-Rank articles
-Return best match
+- Generate embedding for the ticket
+- Normalize vector
+- Search top 5 chunks
+- Group chunks by article
+- Sum similarity scores
+- Rank articles
+- Return best match
 
 🔎 Cosine Similarity Implementation
 faiss.IndexFlatIP(dimension)
