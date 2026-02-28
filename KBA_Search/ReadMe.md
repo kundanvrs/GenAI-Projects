@@ -84,10 +84,10 @@ The system will:
 - faiss.IndexFlatIP(dimension)
 - faiss.normalize_L2(vector)
 
-- Why?
+### Why?
 Inner Product (IP) becomes Cosine Similarity when vectors are normalized. This ensures semantic similarity based on vector direction, not magnitude.
 
-📊 Example Output
+### 📊 Example Output
 🔍 Aggregated Article Ranking:
 
 - Article: OPS-1024
@@ -96,7 +96,7 @@ Inner Product (IP) becomes Cosine Similarity when vectors are normalized. This e
 - Article: DB-204
 - Total Combined Score: 0.83
 
-🏆 FINAL BEST MATCH
+### 🏆 FINAL BEST MATCH
 - Article: OPS-1024
 🧩 Metadata Structure
 
@@ -113,21 +113,21 @@ Each stored chunk has metadata:
 This ensures proper mapping between:
 FAISS Index Position → Chunk → Article
 
-🧠 Tech Stack
+### 🧠 Tech Stack
 - Python
 - FAISS
 - Ollama (Embeddings)
 - BeautifulSoup
 - NumPy
 
-🎯 Use Cases
+### 🎯 Use Cases
 - IT ticket auto-resolution
 - Enterprise knowledge retrieval
 - Internal documentation search
 - DevOps troubleshooting assistant
 - Support automation system
  
-🛡 Production Recommendations
+### 🛡 Production Recommendations
 - Always normalize vectors before storing & searching
 - Keep FAISS and metadata order synchronized
 - Chunk large documents (800–1000 characters recommended)
