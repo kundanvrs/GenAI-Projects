@@ -7,15 +7,15 @@ This project processes HTML-based KBA articles, converts them into embeddings, s
 
 🚀 Features
 
-✅ Load multiple HTML KBA files from a folder
-✅ Extract clean text from HTML
-✅ Chunk large articles for better semantic accuracy
-✅ Generate embeddings using Ollama
-✅ Store vectors in FAISS
-✅ Use cosine similarity (IndexFlatIP + L2 normalization)
-✅ Retrieve top matching chunks
-✅ Aggregate chunk scores per article
-✅ Rank articles by combined similarity score
+       ✅ Load multiple HTML KBA files from a folder
+       ✅ Extract clean text from HTML
+       ✅ Chunk large articles for better semantic accuracy
+       ✅ Generate embeddings using Ollama
+       ✅ Store vectors in FAISS
+       ✅ Use cosine similarity (IndexFlatIP + L2 normalization)
+       ✅ Retrieve top matching chunks
+       ✅ Aggregate chunk scores per article
+       ✅ Rank articles by combined similarity score
 
 🏗 Architecture
 HTML KBA Files
